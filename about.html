@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">    
 	<meta http-equiv="x-ua-compatible" content="ie=edge">   
+	<!-- 網站歷史(about) -->
 	<title>網站歷史</title>    
 	<meta name="description" content="這是 Yuan 的個人網站">
 	<meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -12,7 +13,6 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
 	<!-- 下面是輪播圖（Carousel）的樣式 -->
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />	
-	
 	<!-- nivo-slider 是另一種圖片輪播效果的插件 -->
 	<link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="all" />
 	<!-- 用來讓物件「動畫效果」（滑入、淡出、跳動等） -->
@@ -37,9 +37,10 @@
 	<link rel="stylesheet" href="assets/css/widget.css" type="text/css" media="all" />
 	<!-- 響應式設計（手機/平板/電腦自動適應） -->
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+	<!-- 對整個頁面(html與body)做設定 -->
+	<style>html, body {height: 100%;margin: 0;padding: 0;overflow-x: hidden;overscroll-behavior: none;}</style>
 	<!-- 用來偵測使用者瀏覽器支援哪些功能（例如 CSS3 動畫、影片等） -->	
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-	
 </head>
 <body>
 
@@ -50,7 +51,7 @@
       <div class="loder-section right-section"></div>
     </div>
 
-
+    
 	<header class="top d-flex align-items-center">
 		<div class="container">
 			<div id="sticky-header" class="top-bar d-flex align-items-center">
@@ -63,16 +64,16 @@
 				<div class="col-lg-8 col-md-6">
 					<div class="header-menu">
 						<ul>
-							<li ><a href="#">home</a>
+							<li ><a href="#">主頁</a>
                                 <ul class="sub-menu">
-                                	<li><a href="index.html">Home One</a></li>
-                                	<li><a href="landing-1.html">Landing One</a></li>
+                                	<li><a href="index.html">主頁01</a></li>
+                                	<li><a href="landing-1.html">主頁02</a></li>
                                 </ul>
 					        </li>
-							<li><a href="about.html">about us</a></li>
-							<li><a href="service.html">service</a></li>
-							<li><a href="team.html">team</a></li>
-							<li><a href="#">blog</a>
+							<li><a href="about.html">網站誕生</a></li>
+							<li><a href="service.html">商店</a></li>
+							<li><a href="team.html">直購</a></li>
+							<li><a href="#">抽獎</a>
 								<ul class="sub-menu">
 									<li><a href="blog-grid.html">blog-grid</a></li>
 									<li><a href="blog-details.html">blog-details</a></li>
@@ -128,41 +129,32 @@
 		</div>
 	</div>
 </div>
-<!--==================================================-->
-<!-- 開始了解區域 -->
-<!--==================================================-->
-<div class="about-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 ">
-				<div class="section-title">
-					<div class="main-title">
-						<h3>網站作者<br>
-								想跟大家說的話</h3>
-					</div>
-					<div class="section-thumb">
-						<img src="assets/images/222.png" alt="">
-					</div>
-					<div class="sub-title">
-						<p>嗯…歡迎光臨本 網站<br>
-								我是來自台灣的普通男子，目前正邁入人生最尷尬的階段──「實習生」，<br>
-								一邊工作、一邊懷疑人生，一邊還要假裝自己知道自己在幹嘛（其實沒有）。<br>
-								這裡會分享我在遊戲中搞出來的東西，還有一些…不想交出來會被我腦袋炸掉的碎念。<br>
-								祝你閱讀愉快，出門不撞門。</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12"></div>
-		</div>
-	</div>
+<!-- 網站歷史區域 -->
+<div class="Director-section">
+  <div class="container">
+    <div class="row come justify-content-center">
+      <div class="col-lg-10">
+        <div class="director-content text-center">
+          <div class="Director-title" style="max-width: 800px; margin: 0 auto; text-align: justify; line-height: 1.6em; font-size: 16px;">
+            <h2 style="text-align: center;">網站歷史</h2>
+            <p>故事發生在一個意志混沌的週五深夜，開發者本該進行正經專案，卻因長時間摸魚導致大腦出現過熱現象。在即將睡著與清醒之間的量子波動狀態中，他腦海突兀地產生出這個網站的雛形—一個記錄 Minecraft 建築與回憶的虛擬神殿。</p>
+            <p>這不是一場普通的創作，而是一場在時間與靈感洪流中覺醒的數位召喚。兩天內，零碎的 HTML、CSS、JS 在鍵盤敲擊聲中逐漸組成一個有生命的存在。某種詭異的宇宙意志似乎也參與進來，偷偷在他喝下第四杯無糖綠茶時完成了網頁對齊。</p>
+            <p>網站的誕生像是來自異次元的任務：即使它只是個展示平台，也像是一台時空機器，紀錄我們曾經建過、想過與笑過的一切。也許它不完美，也許開發者是個稱職的薪水小偷，但這就是創造的浪漫。</p>
+            <p>此地，將成為記憶的容器，即使伺服器停擺、帳號忘記密碼、人生被其他事壓垮，它也會靜靜存在。</p>
+            <p>你現在所見的，只是序章。未來還有無限個子頁、無限個模組、無限個我做不完的更新…也可能沒有。誰知道呢？我只是個偶爾發懶、經常廢掉的開發者罷了。</p>
+            <h4 style="text-align: center; margin-top: 30px;">薪水小偷</h4>
+            <span style="display: block; text-align: center; font-size: 14px; color: #666;">Yuan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 <!-- footer-area -->
 <div class="footer-area" style="background:#222; color:#fff; padding:40px 0;">
   <div class="container">
     <div class="d-flex justify-content-between align-items-start">
-
       <!-- ABOUT MUTILEN 左欄 -->
       <div style="width:48%;">
         <h3 style="color:white;">關於 網站作者/開發者</h3>
@@ -226,8 +218,8 @@
 	<!-- jquery meanmenu js -->	
 	<script src="assets/js/jquery.meanmenu.js"></script>
 	<script src="assets/js/popper.min.js"></script>
-	<!-- jquery scrollup js -->	
-	<script src="assets/js/jquery.scrollUp.js"></script>
+	<!-- jquery scrollup js -->
+	<!-- <script src="assets/js/jquery.scrollUp.js"></script> -->
 	<!-- theme js -->	
 	<script src="assets/js/theme.js"></script>
 		<!-- jquery js -->	
