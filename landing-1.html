@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>corporate</title>
+	<!-- 主頁02(Landing) -->
+	<title>Yuan-Space</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -37,14 +38,12 @@
 	<link rel="stylesheet" href="assets/css/widget.css" type="text/css" media="all" />
 	<!-- responsive CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css" media="all" />
 	<!-- modernizr js -->	
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-	
 </head>
 <body>
 
-<!-- loder -->
+<!-- 網頁開啟時出現的 loading 動畫 -->
     <div class="loader-wrapper">
       <div class="loader"></div>
       <div class="loder-section left-section"></div>
@@ -54,7 +53,8 @@
 
 	<header class="top d-flex align-items-center">
 		<div class="container">
-			<div id="sticky-header" class="top-bar d-flex align-items-center">				
+			<div id="sticky-header" class="top-bar d-flex align-items-center">
+			<!-- Logo 區域 -->			
 				<div class="col-lg-2">
 					<div class="header-logo">
 						<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
@@ -63,12 +63,23 @@
 				<div class="col-lg-8 col-md-6">
 					<div class="header-menu">
 						<ul>
-							<li><a href="#home">home</a></li>
-							<li><a href="#about">about us</a></li>
-							<li><a href="#service">service</a></li>
-							<li><a href="#team">team</a></li>
-							<li><a href="#blog">blog</a></li>
-							<li><a href="#contact">contact</a></li>
+							<li><a href="#">主頁</a>
+                                <ul class="sub-menu">
+                                	<li><a href="index.html">主頁01</a></li>
+                                	<li><a href="landing-1.html">主頁02</a></li>
+                                </ul>
+					        </li>
+							<li><a href="about.html">網站誕生</a></li>
+							<li><a href="service.html">商店</a></li>
+							<li><a href="team.html">直購</a></li>
+							<li><a href="#">抽獎</a>
+								<ul class="sub-menu">
+									<li><a href="blog-grid.html">blog-grid</a></li>
+									<li><a href="blog-details.html">blog-details</a></li>
+									<li><a href="blog-list.html">blog-list</a></li>
+								</ul>
+							</li>
+							<li><a href="contact-us.html">contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -83,59 +94,63 @@
 		<div class="mobile-menu">
 			<nav class="itsoft_menu">
 				<ul class="nav_scroll">
-					<li><a href="index.html">home</a></li>
-					<li><a href="#about">about us</a></li>
-					<li><a href="#service">service</a></li>
-					<li><a href="#team">team</a></li>
-					<li><a href="#blog">blog</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li ><a href="#">home</a>
+                        <ul class="sub-menu">
+                        	<li><a href="index.html">Home One</a></li>
+                        	<li><a href="landing-1.html">Landing One</a></li>
+                        </ul>
+			        </li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="#">pages</a></li>
+					<li><a href="blog-grid.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
 <!--==================================================-->
-<!-- Start  slider Area -->
+<!-- 開始區域 -->
 <!--==================================================-->
-<div class="slider-area d-flex align-items-center" id="home">
+<div class="slider-area d-flex align-items-center">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="slider-content">
 					<div class="slider-title">
-						<h4><span>M,</span>ultilen</h4>
-						<h1>CREATIVE IS OUR PASSION</h1>
+						<h4><span>Yuan</span></h4>
+						<h1>閒暇之餘，創建個人網站</h1>
 					</div>					
-				</div>
-				<div class="slider-button">
-					<a href="#">learn more</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!--==================================================-->
-<!-- Start  about Area -->
-<!--==================================================-->
-<div class="about-area" id="about">
+<div class="about-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 ">
-				<div class="section-title" data-cue="zoomIn">
+				<div class="section-title">
 					<div class="main-title">
-						<h3>about us</h3>
+						<h3>網站作者<br>
+								想跟大家說的話</h3>
 					</div>
 					<div class="section-thumb">
 						<img src="assets/images/222.png" alt="">
 					</div>
 					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
+						<p>嗯…歡迎光臨本 網站<br>
+								我是來自台灣的普通男子，目前正邁入人生最尷尬的階段──「實習生」，<br>
+								一邊工作、一邊懷疑人生，一邊還要假裝自己知道自己在幹嘛（其實沒有）。<br>
+								這裡會分享我在遊戲中搞出來的東西，還有一些…不想交出來會被我腦袋炸掉的碎念。<br>
+								祝你閱讀愉快，出門不撞門。</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="about-thumb" data-cue="zoomIn">
+				<div class="about-thumb">
 					<img src="assets/images/about.jpg" alt="">
 				</div>
 			</div>
@@ -149,12 +164,12 @@
 	<div class="container">
 		<div class="row come">
 			<div class="col-lg-12">
-				<div class="director-content" data-cue="zoomIn">
+				<div class="director-content">
 					<div class="Director-title">
-						<h2>WE BELIEVE IN CUSTOMERS SATISFIED</h2>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered <br> alteration in some form available, but the majority have suffered</p>
-						<h4>RAKIB RAHAN</h4>
-						<span>Director – Of Texaz it comany</span>
+						<h2>簡介/介紹</h2>
+						<p>這個網站是我自己搭建的展示平台，分享我和朋友在 Minecraft 裡的建築作品。<br>未來網站會持續更新，不管我是否還玩這個伺服器，網站都會繼續存在，只是內容可能會有所變化。<br> 這裡像是不散的宴席，隨時歡迎大家來欣賞和放鬆。希望你也能喜歡這個創意小天地！</p>
+						<h4>薪水小偷</h4>
+						<span>Yuan</span>
 					</div>
 				</div>
 			</div>
@@ -162,149 +177,112 @@
 	</div>
 </div>
 <!--==================================================-->
-<!-- Start counter-area -->
+<!-- 功能介紹區開始 -->
 <!--==================================================-->
-<div class="counter-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6">
-				<div class="single-counter-box" data-cue="zoomIn">
-					<div class="counter-content">
-						<div class="counter-title">
-							<h1><span class="aa">1250</span><span></span></h1>
-							<h5>Project done</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="single-counter-box" data-cue="zoomIn">
-					<div class="counter-content">
-						<div class="counter-title">
-							<h1><span class="aa">750</span><span></span></h1>
-							<h5>CREATIVE IDEAS</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="single-counter-box" data-cue="zoomIn">
-					<div class="counter-content">
-						<div class="counter-title">
-							<h1><span class="aa">1470</span><span></span></h1>
-							<h5>CUSTOMERS</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="single-counter-box upper" data-cue="zoomIn">
-					<div class="counter-content">
-						<div class="counter-title">
-							<h1><span class="aa">1350</span><span></span></h1>
-							<h5>CUPS OF COFFEE</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- Start service-area -->
-<!--==================================================-->
-<div class="service-area" id="service">
+<div class="service-area upper">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="section-title" data-cue="zoomIn">
+				<div class="section-title">
 					<div class="main-title">
-						<h3>our service</h3>
+						<h3>功能及場地介紹</h3>
 					</div>
 					<div class="section-thumb">
 						<img src="assets/images/222.png" alt="">
 					</div>
 					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
+						<p>這網站是我的 Minecraft 建築展示空間，裡面有我和朋友蓋的各種作品，讓你大飽眼福。<br>畫作可以直接買回家，來裝飾基地。<br>還有抽獎活動，讓你有機會獲得地圖畫。<br>至於其他功能，暫時保密，等我想到再開放。<br>總之，歡迎來這裡逛逛，放鬆一下！<br></p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-network-1"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>UNIQUE DESIGN</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>Minecraft 畫廊展覽館</h2>
+							<p>這裡是我的 Minecraft 畫廊展覽館，<br>
+									收藏了自己親手打造、玩家創作<br>
+									及在世界中拾荒發現的精美作品。<br>
+									展館定期更新，歡迎隨時來欣賞<br>
+									這些獨一無二的虛擬藝術品。</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-responsive"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>BEST QUAITY</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>Minecraft 圖畫開放直購</h2>
+							<p>喜歡我的作品嗎？<br>
+									你可以在這裡直接購買各式畫作，<br>
+									輕鬆帶回家中裝飾。<br>
+									商城商品會不定期更新，<br>
+									價格略高於抽獎活動。</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-web-programming"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>WEB DEVELOPMENT</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>Minecraft 獨家地圖畫抽獎平台</h2>
+							<p>定期舉辦抽獎活動，幸運玩家<br>
+									可獲得各種大小規格的地圖畫<br>
+									作品。這些獨特的地圖畫<br>
+									可用於裝飾你的Minecraft世界，<br>
+									機會難得，千萬別錯過！</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-network-1"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>UNIQUE DESIGN</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>迷之隱藏區域（未開放）</h2>
+							<p>敬請期待！</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-responsive"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>BEST QUAITY</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>迷之隱藏區域（未開放）</h2>
+							<p>敬請期待！</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="single-service-box" data-cue="zoomIn">
+				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-ico">
-							<i class="flaticon-web-programming"></i>
+							<i class="far fa-address-card"></i>
 						</div>
 						<div class="service-title">
-							<h2>WEB DEVELOPMENT</h2>
-							<p>It is a long established fact that a reader will distracted by the readable content</p>
+							<h2>迷之隱藏區域（未開放）</h2>
+							<p>敬請期待！</p>
 						</div>
 					</div>
 				</div>
@@ -313,618 +291,132 @@
 	</div>
 </div>
 <!--==================================================-->
-<!-- Start portfolio-area -->
-<!--==================================================-->
-<div class="portfolio-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title" data-cue="zoomIn">
-					<div class="main-title">
-						<h3>portfolio</h3>
-					</div>
-					<div class="section-thumb">
-						<img src="assets/images/222.png" alt="">
-					</div>
-					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="portfolio-box" data-cue="zoomIn">
-							<div class="portfolio-content">
-								<div class="fortfolio-thumb">
-									<img src="assets//images/p1.jpg" alt="">
-									<div class="port-content-icon">
-										<a href="blog-details.html"><i class="fa fa-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<div class="portfolio-box" data-cue="zoomIn">
-							<div class="portfolio-content">
-								<div class="fortfolio-thumb">
-									<img src="assets//images/port.jpg" alt="">
-									<div class="port-content-icon">
-										<a href="blog-details.html"><i class="fa fa-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="portfolio-box" data-cue="zoomIn">
-					<div class="portfolio-content">
-						<div class="fortfolio-thumb">
-							<img src="assets//images/po1.jpg" alt="">
-							<div class="port-content-icon">
-								<a href="blog-details.html"><i class="fa fa-link"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="row">
-					<div class="col-lg-12" data-cue="zoomIn">
-						<div class="portfolio-box">
-							<div class="portfolio-content">
-								<div class="fortfolio-thumb">
-									<img src="assets//images/po3.jpg" alt="">
-									<div class="port-content-icon">
-										<a href="blog-details.html"><i class="fa fa-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12" data-cue="zoomIn">
-						<div class="portfolio-box">
-							<div class="portfolio-content">
-								<div class="fortfolio-thumb">
-									<img src="assets//images/po5.jpg" alt="">
-									<div class="port-content-icon">
-										<a href="blog-details.html"><i class="fa fa-link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="portfolio-box">
-					<div class="portfolio-content">
-						<div class="fortfolio-thumb">
-							<img src="assets//images/poo6.jpg" alt="">
-							<div class="port-content-icon">
-								<a href="blog-details.html"><i class="fa fa-link"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-6" data-cue="zoomIn">
-				<div class="portfolio-box">
-					<div class="portfolio-content">
-						<div class="fortfolio-thumb">
-							<img src="assets//images/poro7.jpg" alt="">
-							<div class="port-content-icon">
-								<a href="blog-details.html"><i class="fa fa-link"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- Start testimonial-area -->
+<!-- 這個區塊用來顯示客戶評語 -->
 <!--==================================================-->
 <div class="testimonial-area d-flex align-items-center">
-	<div class="container">
-		<div class="row" data-cue="zoomIn">
-			<div class="owl-carousel testi_list">
-				<div class="col-lg-12">
-					<div class="single-testi-box">
-						<div class="testimonial-content">
-							<div class="testimonial-thumb">
-								<img src="assets/images/quo.png" alt="">
-							</div>
-							<div class="testimonial-title">
-								<p>
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.							</p>
-								<h4>Morlan dulhash</h4>
-								<span>grapich designer</span>
-							</div>
-							<div class="testimonial-img">
-								<img src="assets/images/testi.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="single-testi-box">
-						<div class="testimonial-content">
-							<div class="testimonial-thumb">
-								<img src="assets/images/quo.png" alt="">
-							</div>
-							<div class="testimonial-title">
-								<p>
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.							</p>
-								<h4>Morlan dulhash</h4>
-								<span>grapich designer</span>
-							</div>
-							<div class="testimonial-img">
-								<img src="assets/images/testi.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-12">
-					<div class="single-testi-box">
-						<div class="testimonial-content">
-							<div class="testimonial-thumb">
-								<img src="assets/images/quo.png" alt="">
-							</div>
-							<div class="testimonial-title">
-								<p>
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.							</p>
-								<h4>Morlan dulhash</h4>
-								<span>grapich designer</span>
-							</div>
-							<div class="testimonial-img">
-								<img src="assets/images/testi.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="owl-carousel testi_list">
+
+        <div class="col-lg-12">
+          <div class="single-testi-box">
+            <div class="testimonial-content">
+
+              <div class="testimonial-thumb">
+                <img src="assets/images/quo.png" alt="">
+              </div>
+
+              <!-- 標題，置中粗體，圖片下方，距圖片約2行（1.5em），上下間距微調 -->
+              <h3 style="text-align: center; font-weight: bold; margin-top: 1.5em; margin-bottom: 0.5em;">
+                伺服器  IP位址
+              </h3>
+
+              <div class="testimonial-title" style="margin-top: 0;">
+                <p style="margin-top: 0;">
+  								伺服器主IP：minecraftdx.com<br>
+  								伺服器副IP：tcp.minecraftdx.com
+								</p>
+                <h4>Yuan（網站開發者）</h4>
+                <span>程式迷霧中的迷途旅人</span>
+              </div>
+
+              <div class="testimonial-img">
+                <img src="assets/images/testi.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 下面的兩個 testimonial 項目也可以照同樣格式改，這裡示範第一個 -->
+        <div class="col-lg-12">
+          <div class="single-testi-box">
+            <div class="testimonial-content">
+
+              <div class="testimonial-thumb">
+                <img src="assets/images/quo.png" alt="">
+              </div>
+
+              <h3 style="text-align: center; font-weight: bold; margin-top: 1.5em; margin-bottom: 0.5em;">
+                網站開發者的基地<br>
+                「畫廊空間：自建與外來設計合璧」
+              </h3>
+
+              <div class="testimonial-title" style="margin-top: 0;">
+                <p style="margin-top: 0;">
+                  分流 1<br>
+									畫廊領地指令：/res tp **畫廊未蓋完**<br>
+									商店領地指令：/res tp /res tp SYuan.Sh
+                </p>
+                <h4>Yuan（網站開發者）</h4>
+                <span>程式迷霧中的迷途旅人</span>
+              </div>
+
+              <div class="testimonial-img">
+                <img src="assets/images/testi.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="single-testi-box">
+            <div class="testimonial-content">
+
+              <div class="testimonial-thumb">
+                <img src="assets/images/quo.png" alt="">
+              </div>
+
+              <h3 style="text-align: center; font-weight: bold; margin-top: 1.5em; margin-bottom: 0.5em;">
+                網站介紹
+              </h3>
+
+              <div class="testimonial-title" style="margin-top: 0;">
+                <p style="margin-top: 0;">
+                  這是我自己架設的網站，主要用來展示我在 Minecraft 裡蓋的一些建築作品。<br>
+									除了單純紀錄，未來也可能會開放抽獎、販售等活動。有興趣的話可以隨時來逛逛！
+                </p>
+                <h4>Yuan（網站開發者）</h4>
+                <span>程式迷霧中的迷途旅人</span>
+              </div>
+
+              <div class="testimonial-img">
+                <img src="assets/images/testi.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
-<!--==================================================-->
-<!-- Start team-area -->
-<!--==================================================-->
-<div class="team-area" id="team">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title" data-cue="zoomIn">
-					<div class="main-title">
-						<h3>our team</h3>
-					</div>
-					<div class="section-thumb">
-						<img src="assets/images/222.png" alt="">
-					</div>
-					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				<div class="team-single-box" data-cue="zoomIn">
-					<div class="team-thumb">
-						<img src="assets/images/team1.jpg" alt="">
-					</div>
-					<div class="team-content">
-						<div class="team-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-title">
-							<h3>nikol watson</h3>
-							<span>web developer</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="team-single-box">
-					<div class="team-thumb">
-						<img src="assets/images/team2.jpg" alt="">
-					</div>
-					<div class="team-content">
-						<div class="team-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-title">
-							<h3>ROBART KARLOSH</h3>
-							<span>Head of Idea</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="team-single-box">
-					<div class="team-thumb">
-						<img src="assets/images/team1.jpg" alt="">
-					</div>
-					<div class="team-content">
-						<div class="team-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-						<div class="team-title">
-							<h3>MINHAJ MARYINLE</h3>
-							<span>web developer</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- Start pricing-area -->
-<!--==================================================-->
-<div class="pricing-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title" data-cue="zoomIn">
-					<div class="main-title">
-						<h3>pricing table</h3>
-					</div>
-					<div class="section-thumb">
-						<img src="assets/images/222.png" alt="">
-					</div>
-					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="single-pricing-box">
-					<div class="pricing-content">
-						<div class="pricing-title">
-							<h3>basic</h3>
-							<h1>$17<span>/month</span></h1>
-							<ul>
-								<li>20 GB Disk Space</li>
-								<li>30 GB Monthly Bandwidth</li>
-								<li>500 Email Accounts</li>
-								<li>Unlimited Users</li>
-								<li>Automatic Could Backups</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing-button">
-						<a href="#">select</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="single-pricing-box active">
-					<div class="pricing-content">
-						<div class="pricing-title">
-							<h3>basic</h3>
-							<h1>$38<span>/month</span></h1>
-							<ul>
-								<li>20 GB Disk Space</li>
-								<li>30 GB Monthly Bandwidth</li>
-								<li>500 Email Accounts</li>
-								<li>Unlimited Users</li>
-								<li>Automatic Could Backups</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing-button">
-						<a href="#">select</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6" data-cue="zoomIn">
-				<div class="single-pricing-box">
-					<div class="pricing-content">
-						<div class="pricing-title">
-							<h3>basic</h3>
-							<h1>$49<span>/month</span></h1>
-							<ul>
-								<li>20 GB Disk Space</li>
-								<li>30 GB Monthly Bandwidth</li>
-								<li>500 Email Accounts</li>
-								<li>Unlimited Users</li>
-								<li>Automatic Could Backups</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing-button">
-						<a href="#">select</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<!-- footer-area -->
+<div class="footer-area" style="background:#222; color:#fff; padding:40px 0;">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-start">
 
+      <!-- ABOUT MUTILEN 左欄 -->
+      <div style="width:48%;">
+        <h3 style="color:white;">關於 網站作者/開發者</h3>
+        <p>某個大學還沒畢業、每天都在拖報告的二十出頭男生。<br>
+						白天喝茶、晚上寫網頁，偶爾懷疑人生。<br>
+							住在山邊，貓有時比我還懂事。<br>
+								這個網站，就是一邊耍廢一邊亂寫寫的副產品。</p>
+      </div>
 
-
-<!--==================================================-->
-<!-- Start Blog-area -->
-<!--==================================================-->
-<div class="blog-area landing style-two" id="blog">
-	<div class="container">
-	    <div class="row">
-			<div class="col-lg-12">
-				<div class="section-title" data-cue="zoomIn">
-					<div class="main-title">
-						<h3>Our Letest Blog</h3>
-					</div>
-					<div class="section-thumb">
-						<img src="assets/images/222.png" alt="">
-					</div>
-					<div class="sub-title">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-					<div class="blog-single-box" data-cue="zoomIn">
-						<div class="blog-thumb">
-							<img src="assets/images/90.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<div class="blog-title">
-								<h3><a href="blog-details.html">Trategies for getting,actionable feed back from your customers</a></h3>
-								<p>Commodo quis etm amet ex voluptate. Ex aute sint ipsum dolore. Culpa Lorem commodo quis etm amet ex voluptate.</p>
-							</div>
-						</div>
-						<div class="blog-text">
-							<h6>22 jan 2024 <span>By Admin</span></h6>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="blog-single-box" data-cue="zoomIn">
-						<div class="blog-thumb">
-							<img src="assets/images/b90.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<div class="blog-title">
-								<h3><a href="blog-details.html">Egies for getting deiled,actionable feed back from your customers</a></h3>
-								<p>orem commodo quis etm amet ex voluptate. Ex aute sint ipsum dolore. Culpa Lorem commodo quis etm amet ex voluptate.</p>
-							</div>
-						</div>
-						<div class="blog-text">
-							<h6>22 jan 2024 <span>By Admin</span></h6>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="blog-single-box" data-cue="zoomIn">
-						<div class="blog-thumb">
-							<img src="assets/images/290.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<div class="blog-title">
-								<h3><a href="blog-details.html">Lorem ipsum dolor is sit amet, conset ctetur adipiscing on the flore...</a></h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-							</div>
-						</div>
-						<div class="blog-text">
-							<h6>22 jan 2024 <span>By Admin</span></h6>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-<!--==================================================-->
-<!-- Start Contact-area -->
-<!--==================================================-->
-<div class="contact-section" id="contact" data-cue="zoomIn">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="sideber-title">
-					<h3>contact form</h3>
-				</div>
-				<div class="contact-form-box">
-					<form action="#" method="POST" id="dreamit-form">
-						<div class="row">
-							<div class="col-lg-6 col-sm-6">
-								<div class="from-box">
-									<input type="text" name="name" placeholder=" Name">
-								</div>
-							</div>
-							<div class="col-lg-6 col-sm-6">
-								<div class="from-box">
-									<input type="text" name="phone" placeholder=" Phone">
-								</div>
-							</div>
-							
-							<div class="col-lg-6 col-sm-6">
-								<div class="from-box">
-									<input type="text" name="email" placeholder=" Email">
-								</div>
-							</div>
-							<div class="col-lg-6 col-sm-6">
-								<div class="from-box">
-									<input type="text" name="web" placeholder="Website">
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="from-box">
-									<textarea name="massage" id="massage" cols="30" rows="5" placeholder="Massage"></textarea>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="contact-button upper">
-									<button type="submit">Send </button>
-								</div>
-							</div>
-						</div>
-					</form>
-					<div id="status"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--==================================================-->
-<!-- Start footer-area -->
-<!--==================================================-->
-<div class="footer-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="footer-title" data-cue="zoomIn">
-					<div class="section-thumb">
-						<img src="assets/images/logo.png" alt="">
-					</div>
-					<div class="footer-tex">
-						<p>There are many variations of passages of Lorem Ipsum available, but the maksu rez have suffered</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-6">
-				<div class="single-footer-box" data-cue="zoomIn">
-					<div class="footer-content">
-						<div class="footer-title">
-							<h3>ABOUT MUTILEN</h3>
-							<p>It is a long established fact that is a reader will be distracted by the readable content of page when looking at its layout. it’s the more fact that is reader</p>
-						</div>
-						<div class="footer-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="footer-box" data-cue="zoomIn">
-					<div class="footer-info">
-						<div class="footer-tex">
-							<h3>QUICK CONTACT</h3>
-							<p>Flor. 6, House. 25, Block-b. KDA Shiromoni, Khulna</p>
-							<p>+880 1912 345 678 <br> +880 1912 345 678</p>
-							<p>example@email.com <br> example@email.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<div class="contact-area" data-cue="zoomIn">
-					<div class="container">
-						<div class="row">
-							<div class="sideber-title">
-								<h3>GET IN TOUCH</h3>
-							</div>
-							<div class="contact-form-box">
-								<form action="#" method="POST" id="dreamit-form">
-									<div class="row">
-										<div class="col-lg-12 col-sm-12">
-											<div class="from-box">
-												<input type="text" placeholder=" Name">
-											</div>
-										</div>
-										<div class="col-lg-12 col-sm-12">
-											<div class="from-box">
-												<input type="text" placeholder="Email">
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="from-box">
-												<textarea name="massage" id="massage" cols="30" rows="10" placeholder="Massage"></textarea>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div class="contact-button">
-												<button type="submit">Send </button>
-											</div>
-										</div>
-									</div>
-								</form>
-								<div id="status"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6" data-cue="zoomIn">
-				<div class="widget-sidebar-box">
-					<div class="widget-sidebar-title text-left pb-20">
-						<h2>Popular Post</h2>
-						<div class="em_bar_bg text-left1"></div>
-					</div>
-					<div class="popular-post-box">
-						<div class="popular-post-box-inner d-flex">
-							<div class="popular-post-thumb">
-								<a href="blog-details.html"><img src="assets/images/b.jpg" alt=""></a>
-							</div>
-							<div class="popular-post-content">
-								<a href="blog-details.html">Riations of passages of the most Lorem</a>
-								<span>jun 24 2024 </span>
-							</div>
-						</div>
-					</div>
-					<div class="popular-post-box">
-						<div class="popular-post-box-inner d-flex upper">
-							<div class="popular-post-thumb">
-								<a href="blog-details.html"><img src="assets/images/b1.jpg" alt=""></a>
-							</div>
-							<div class="popular-post-content">
-								<a href="blog-details.html">Ipsum dolor is sit amet, conset ctetur</a>
-								<span>jun 24 2024 </span>
-							</div>
-						</div>
-					</div>					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- Start Copyright-area -->
-<!--==================================================-->
-<div class="copyright-area" data-cue="zoomIn">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="copyright-title">
-					<p>Copyright © All rights reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板">网站模板</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+      <!-- QUICK CONTACT 右欄 -->
+      <div style="width:48%;">
+        <h3 style="color:white;">聯絡方式：</h3>
+        <p>出沒地點：靠近貓空的山腳下，常與貓對話。</p>
+        <p>請把訊息寫在樹葉上，綁在貓腳上，放進溪水漂走 <br> 若山神點頭、貓有空，我就會知道；沒回大概是貓耍廢</p> 
+      </div>
+    </div>
+<!-- 版權區 -->
+<div class="copyright-area" style="background:#222; color:#aaa; text-align:center; padding:20px 0;">
+  <p>版權所有 © 保留所有權利</p>
 </div>
 <!-- scroll strat============  -->
 <div class="scroll-area">
@@ -973,7 +465,6 @@
 	<script src="assets/js/jquery.scrollUp.js"></script>
 	<!-- theme js -->	
 	<script src="assets/js/theme.js"></script>
-	<script src="assets/js/scrollCue.min.js"></script>
 		<!-- jquery js -->	
 
 
