@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- 直購 - 畫作(team) -->
+	<title>畫作</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all" />	
+	
+	<!-- nivo-slider CSS -->
+	<link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="all" />
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />	
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all" />	
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />	
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />	
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />	
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />	
+	<!-- Main Style CSS -->
+	<link rel="stylesheet"  href="style.css" type="text/css" media="all" />
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css" media="all" />
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
+	<!-- widget CSS -->
+	<link rel="stylesheet" href="assets/css/widget.css" type="text/css" media="all" />
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+	<!-- 用來偵測使用者瀏覽器支援哪些功能（例如 CSS3 動畫、影片等） -->	
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- 功能介紹區塊 -->
+	<style>.blog-thumb {margin-bottom: 30px;}</style>
+	<!-- 圖片大小格式 -->
+	<style>.L_photo{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background-color:#eee;border-radius:8px}
+	.L_photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}</style>
+
+</head>
+<body>
+
+	<div id="age-check">
+		<div class="box">
+			<h1>年齡確認</h1>
+			<p>本頁面內容涉及限制級資訊，僅供年滿 18 歲之使用者瀏覽。<br>
+					依據《兒童及少年福利與權益保障法》第46條規定，<br>請確認您的年齡：</p>
+			<button class="yes" onclick="showContent()">我已滿 18 歲，並願遵守相關規範</button>
+			<button class="no" onclick="deny()">未滿 18 歲，請返回主頁</button>
+		</div>
+	</div>
+
+	<style>
+		#age-check {
+			position: fixed;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+			backdrop-filter: blur(30px) brightness(0.7);
+			background: rgba(255, 255, 255, 0.25);
+			color: #000;
+			text-align: center;
+			z-index: 99999;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#age-check .box {
+			background: rgba(255, 255, 255, 0.7);
+			border-radius: 15px;
+			padding: 30px;
+			max-width: 500px;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 0 20px rgba(0,0,0,0.3);
+		}
+
+		#age-check button {
+			padding: 12px 24px;
+			margin: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.yes {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.no {
+			background-color: #f44336;
+			color: white;
+		}
+
+		.yes:hover, .no:hover {
+			filter: brightness(1.1);
+		}
+	</style>
+
+	<script>
+		function showContent() {
+			document.getElementById("age-check").style.display = "none";
+		}
+
+		function deny() {
+			alert("依據法規，未滿 18 歲者不得瀏覽本頁內容，系統將返回主頁。");
+			window.location.href = "index.html";
+		}
+	</script>
+
+	<!-- 網頁開啟時出現的 loading 動畫 -->
+    	<div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    	</div>
+ 
+	<header class="top d-flex align-items-center">
+		<div class="container">
+			<div id="sticky-header" class="top-bar d-flex align-items-center">
+			<!-- Logo 區域 -->				
+				<div class="col-lg-2">
+					<div class="header-logo">
+						<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6">
+					<div class="header-menu">
+						<ul>
+							<li ><a href="#">首頁</a>
+                                <ul class="sub-menu">
+                                	<li><a href="index.html">主頁</a></li>
+                                	<li><a href="landing-1.html">未開放</a></li>
+                                </ul>
+					    </li>
+							<li><a href="about.html">網站誕生</a></li>
+							<li><a href="service.html">商店</a></li>
+							<li><a href="#">畫作</a>
+								<ul class="sub-menu">
+									<li><a href="team.html">直購</a></li>
+									<li><a href="blog-grid.html">畫作編碼</a></li>
+								</ul>
+							</li>
+							<li><a href="contact-us.html">直購兌獎通報</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- ============================================================== -->
+<!-- 手機/平板  響印設計 -->
+<!-- ============================================================== -->
+	<div class="mobile-menu-area d-sm-block d-md-block d-lg-none ">
+		<div class="mobile-menu">
+			<nav class="itsoft_menu">
+				<ul class="nav_scroll">
+					<li ><a href="#">首頁</a>
+                        <ul class="sub-menu">
+                        	<li><a href="index.html">主頁</a></li>
+                        	<li><a href="landing-1.html">未開放</a></li>
+                        </ul>
+			        </li>
+					<li><a href="about.html">網站誕生</a></li>
+					<li><a href="service.html">商店</a></li>
+					<li><a href="#">畫作</a></li>
+					<li><a href="contact-us.html">直購兌獎通報</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+<!--==================================================-->
+<!-- Start breadcumb-area -->
+<!--==================================================-->
+<div class="breadcumb-area d-flex align-items-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="breacumb-content">
+					<div class="breadcumb-title">
+						<h1>直購 - 畫作</h1>
+					</div>
+					<div class="breadcumb-content-text">
+					<a href="index.html"> 首頁 <i class="fas fa-angle-right"></i><span>畫作</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- Start blog-area -->
+<!--==================================================-->
+<div class="blog-area style-two">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L1.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>2x2 | 智慧草神</h3>
+								<p>《原神》中出現的人物，第一件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：47萬 遊戲幣<br>完成日期：2024年9月8日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L2.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>3x4 | 巨乳夜蘭</h3>
+								<p>《原神》中出現的人物，第二件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：180萬 遊戲幣<br>完成日期：2024年9月17日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L3.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>3x5 | 九條裟羅 手遮胸</h3>
+								<p>《原神》中出現的人物，第三件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：220萬 遊戲幣<br>完成日期：2024年10月12日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L4.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>2x4 | アリサ・ミハイロヴナ・九条 禮物</h3>
+								<p>《不時輕聲地以俄語遮羞的鄰座艾莉同學》中出現的人物，第七件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：120萬 遊戲幣<br>完成日期：2024年10月17日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L5.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>2x2 | JOJO  草神</h3>
+								<p>《原神》中出現的人物，第十五件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：47萬 遊戲幣<br>完成日期：2024年11月19日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/L6.png" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>3x3 | 芙莉蓮(フリーレン)</h3>
+								<p>《葬送的芙莉蓮》中出現的人物，第十六件完成的作品</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：150萬 遊戲幣<br>完成日期：2025年4月6日</h6>
+						</div>
+					</div>
+				</div>
+
+							<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-lg-4 col-md-6">
+					<div class="blog-single-box">
+						<div class="blog-thumb">
+							<img src="assets/images/b90.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<div class="blog-title">
+								<h3>?x? | 未蓋出</h3>
+								<p>無</p>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h6>直購價：???萬 遊戲幣<br>完成日期：????年?月??日</h6>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- 頁尾 -->
+<!--==================================================-->
+<div class="footer-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer-title">
+					<div class="section-thumb">
+						<img src="assets/images/logo.png" alt="">
+					</div>
+					<div class="footer-tex">
+						<p>想找我？就像 debug 一樣——你得一步一步 trace，最終你會發現，<br>我的聯絡方式，其實早就寫在 console 裡。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 頁尾區域 -->
+<div class="footer-area" style="background:#222; color:#fff; padding:40px 0;">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-start">
+      <!-- ABOUT MUTILEN 左欄 -->
+      <div style="width:48%;">
+        <h3 style="color:white;">關於 網站作者/開發者</h3>
+        <p>某個大學還沒畢業、每天都在拖報告的二十出頭男生。<br>
+						白天喝茶、晚上寫網頁，偶爾懷疑人生。<br>
+							住在山邊，貓有時比我還懂事。<br>
+								這個網站，就是一邊耍廢一邊亂寫寫的副產品。</p>
+      	</div>
+
+      	<!-- QUICK CONTACT 右欄 -->
+      	<div style="width:48%;">
+        	<h3 style="color:white;">聯絡方式：</h3>
+        	<p>出沒地點：靠近貓空的山腳下，常與貓對話。</p>
+        	<p>請把訊息寫在樹葉上，綁在貓腳上，放進溪水漂走 <br> 若山神點頭、貓有空，我就會知道；沒回大概是貓耍廢</p> 
+      	</div>
+    	</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- Start Copyright-area -->
+<!--==================================================-->
+<div class="copyright-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="copyright-title">
+					<p>版權所有 © 保留所有權利</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- scroll strat============  -->
+<div class="scroll-area">
+	<div class="top-wrap">
+		<div class="go-top-btn-wraper">
+			<div class="go-top go-top-button">
+				<i class="flaticon-up-arrow-1"></i>
+				<i class="flaticon-up-arrow-1"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- scroll end============  -->
+
+	
+	<!-- jquery js -->	
+	<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+	<!-- bootstrap js -->	
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- carousel js -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- counterup js -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- waypoints js -->
+	<script src="assets/js/waypoints.min.js"></script>
+	<!-- wow js -->
+	<script src="assets/js/wow.js"></script>
+	<!-- imagesloaded js -->
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<!-- venobox js -->
+	<script src="venobox/venobox.js"></script>
+	<!-- ajax mail js -->
+	<script src="assets/js/ajax-mail.js"></script>
+	<!--  animated-text js -->	
+	<script src="assets/js/animated-text.js"></script>
+	<!-- venobox min js -->
+	<script src="venobox/venobox.min.js"></script>
+	<!-- isotope js -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- jquery nivo slider pack js -->
+	<script src="assets/js/jquery.nivo.slider.pack.js"></script>
+	<!-- jquery meanmenu js -->	
+	<script src="assets/js/jquery.meanmenu.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<!-- jquery scrollup js -->	
+	<script src="assets/js/jquery.scrollUp.js"></script>
+	<!-- theme js -->	
+	<script src="assets/js/theme.js"></script>
+		<!-- jquery js -->	
+
+
+<script>
+$(document).ready(function(){
+
+$('.aa').counterUp({
+    delay: 10,
+    time: 1000
+});
+
+
+});
+</script>
+
+	<script>
+		(function($) {
+    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
+
+        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);
+	</script>
+</body>
+</html>
