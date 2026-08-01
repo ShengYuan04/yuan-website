@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>拾荒邊境商會</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.qty{color:#000 !important;background:#fff !important;}
+			.product-name{cursor:pointer;white-space:pre;}
+			.image-preview{
+			display:none;
+			position:fixed;
+			z-index:9999;
+			width:300px;
+			max-height:300px;
+			object-fit:contain;
+			background:white;
+			border:3px solid #555;
+			padding:5px;
+			box-shadow:0 0 20px black;
+			pointer-events:none;}
+			#productTable td,
+			#cartTable td{padding:8px;}
+			.item-checkbox{
+			display:inline-block !important;
+			appearance:auto !important;
+			-webkit-appearance:checkbox !important;
+			width:18px !important;
+			height:18px !important;
+			opacity:1 !important;
+			}
+</style>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">拾荒邊境商會</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>選單</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<li><a href="generic.html">拾荒邊境領土</a></li>
+											<li><a href="elements.html">畫作購物</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>畫作購物</h2>
+							<p>拾荒邊境商會｜Minecraft｜檢視畫作&價格確認</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+<section>
+
+<h3>商品對照表(萬)</h3>
+
+
+<div id="shopArea">
+
+<table id="productTable">
+
+<thead>
+<tr>
+<th>選擇</th>
+<th>編號</th>
+<th>名稱</th>
+<th>售價</th>
+</tr>
+</thead>
+
+<tbody id="productList">
+
+</tbody>
+
+</table>
+
+
+<h3>已選商品清單</h3>
+
+
+<table id="cartTable">
+
+<thead>
+<tr>
+<th>名稱</th>
+<th>價格</th>
+<th>數量</th>
+<th>小計</th>
+<th>操作</th>
+</tr>
+</thead>
+
+
+<tbody id="cartList">
+
+</tbody>
+
+
+<tfoot>
+
+<tr>
+<td colspan="3">
+總價
+</td>
+
+<td id="totalPrice">
+0萬
+</td>
+
+<td></td>
+
+</tr>
+
+</tfoot>
+
+
+</table>
+
+
+</div>
+
+
+</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 拾荒邊境商會</li><li>設計: <a href="https://www.youtube.com/@YT_Yuan2023/videos">Yuan</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+// ===== 商品資料 (網站主人修改) =====
+const products = [
+  {id:0, name:"【原神】智慧草神   #2x2", price:47},
+  {id:1, name:"【原神】巨乳夜闌   #3x4", price:180},
+  {id:2, name:"【原神】九條沙羅 手遮胸   #3x5", price:220},
+  {id:3, name:"アリサ・ミハイロヴナ・九条 禮物   #2x4", price:115},
+  {id:4, name:"【ONE PIECE】God Usopp   #2x3", price:124},
+  {id:5, name:"【ONE PIECE】SANJI   #2x3", price:124},
+  {id:6, name:"【咒術迴戰】兩面宿儺   #6x3", price:1150},
+  {id:7, name:"一臉JOJO樣的 草神   #2x2", price:47},
+  {id:8, name:"【# % ! *】待更新", price:720},
+  {id:9, name:"【VTuber】噶嗚·古拉   #3x6", price:780},
+  {id:10, name:"【崩壞】花火   #3x6", price:800},
+  {id:11, name:"【崩壞】花火(淫紋)   #3x6", price:960},
+  {id:12, name:"【# % ! *】待更新", price:5},
+  {id:13, name:"【Q版】惠惠   #2x4", price:160},
+  {id:14, name:"【# % ! *】待更新", price:45},
+  {id:15, name:"【# % ! *】待更新", price:47},
+  {id:16, name:"【# % ! *】待更新", price:115},
+  {id:17, name:"【# % ! *】待更新", price:280},
+  {id:18, name:"【# % ! *】待更新", price:375},
+  {id:19, name:"【# % ! *】待更新", price:480},
+  {id:20, name:"【# % ! *】待更新", price:720},
+  {id:21, name:"【# % ! *】待更新", price:780},
+  {id:22, name:"【# % ! *】待更新", price:800},
+  {id:23, name:"【# % ! *】待更新", price:1080},
+  {id:24, name:"【# % ! *】待更新", price:5},
+  {id:25, name:"【# % ! *】待更新", price:7},
+  {id:26, name:"【# % ! *】待更新", price:45},
+  {id:27, name:"【# % ! *】待更新", price:47},
+  {id:28, name:"【# % ! *】待更新", price:115},
+  {id:29, name:"【# % ! *】待更新", price:280},
+];
+const list=document.getElementById("productList");
+products.forEach(item=>{
+let row=document.createElement("tr");
+row.innerHTML=`
+<td><input type="checkbox" class="item-checkbox" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}"></td>
+<td>${item.id}</td>
+<td class="name-cell"><span class="product-name" data-img="images/${item.id}.jpg">${item.name}</span></td>
+<td>${item.price}</td>`;
+list.appendChild(row);});
+//圖片預覽
+const preview=document.createElement("img");
+preview.className="image-preview";
+document.body.appendChild(preview);
+document.addEventListener("mouseover",e=>{
+if(e.target.classList.contains("product-name")){
+preview.src=e.target.dataset.img;
+preview.style.display="block";}});
+document.addEventListener("mousemove",e=>{
+if(preview.style.display=="block"){
+preview.style.left=e.clientX+20+"px";
+preview.style.top=e.clientY+20+"px";}});
+document.addEventListener("mouseout",e=>{
+if(e.target.classList.contains("product-name")){
+preview.style.display="none";}});
+const cartTableBody=document.querySelector("#cartTable tbody");
+const totalPriceEl=document.getElementById("totalPrice");
+
+function updateTotal(){
+let total=0;
+document.querySelectorAll(".subtotal").forEach(x=>{
+total+=Number(x.innerText);
+});
+totalPriceEl.innerText=total+"萬";
+}
+
+document.addEventListener("change",function(e){
+
+if(!e.target.classList.contains("item-checkbox")) return;
+
+let box=e.target;
+let id=box.dataset.id;
+let name=box.dataset.name;
+let price=Number(box.dataset.price);
+
+if(box.checked){
+
+let row=document.createElement("tr");
+row.id="cart-"+id;
+
+row.innerHTML=`
+<td>${name}</td>
+<td>${price}</td>
+<td><input type="number" class="qty" value="1" min="1"></td>
+<td class="subtotal">${price}</td>
+<td><button class="remove-btn">刪除</button></td>
+`;
+
+cartTableBody.appendChild(row);
+
+let qty=row.querySelector(".qty");
+
+qty.addEventListener("input",()=>{
+row.querySelector(".subtotal").innerText=price*qty.value;
+updateTotal();
+});
+
+row.querySelector(".remove-btn").onclick=()=>{
+row.remove();
+box.checked=false;
+updateTotal();
+};
+
+}else{
+
+let row=document.getElementById("cart-"+id);
+if(row) row.remove();
+
+}
+
+updateTotal();
+
+});
+</script>
+
+	</body>
+</html>
